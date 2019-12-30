@@ -6,8 +6,11 @@ public class MethodTask {
 		if(n1>n2) {
 			System.out.println(n1+" is greater than "+n2);
 		}
-		else {
+		else if(n2>n1) {
 			System.out.println(n2+" is greater than "+n1);
+		}
+		else {
+			System.out.println("Numbers are equal");
 		}
 	}
 	void num1(int n) {
@@ -18,8 +21,9 @@ public class MethodTask {
 			System.out.println("It is odd");
 		}
 	}
-	void palend(String s1,String s2) {
+	void palend(String s1) {
 		int length;
+		String s2="";
 		length=s1.length();
 		for(int i=length-1;i>=0;i--) {
 			s2+=s1.charAt(i);
@@ -39,7 +43,7 @@ public class MethodTask {
 		task2.num1(1);
 		
 		MethodTask task3=new MethodTask();
-		task3.palend("civic", "");
+		task3.palend("civic");
 	}
 
 }
